@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+/****************** Initialization ******************/
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/****************** Utility ******************/
+.glass-bg{
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0 0 0 -50px rgba(0,0,0,0.6);
+}
+
+.glass-primary{
+    backdrop-filter: blur(8px);
+    box-shadow: inset 0 0 2000px 200px rgba(151, 151, 160, 0.25);
+    border-radius: 20px;
+}
+
+/****************** Variables ******************/
+:root{
+    --color-secondary: rgba(170, 170, 170, 0.5);
+    --color-text-primary: #ffffff;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--color-text-primary);
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    padding-top: 20px;
+}
+
+section{
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+}
+
+/******************* Hero Section *******************/
+.hero{
+    width: 100%;
+    height: 100vh;
+}
+
+.bg-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.bg-img{
+    position: fixed;
+    top: -100px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+/* Navigation Bar */
+.nav-bar{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style-type: none;
+    gap: 5px;
+}
+
+.nav-bar a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    width: 200px;
+    height: 100%;
+}
+
+.nav-bar ul li:hover{
+    background-color: var(--color-secondary);
+}
+
+/************* Main ****************/
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 60px;
+}
+
+/****************** Planets Main ******************/
+.image{
+    width: 400px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 60px 60px;
+}
+
+.grid-img{
+  
+    width: 190px;
+}
+
+.grid-img:hover{
+    scale: 1.6;
+}
+#ear{
+    width: 550px; 
+    height: 400px;
+} 
+#mar{
+    width: 300px;
+    height: 500px;
+}
+#sat{
+    height: 400px;
+    width: 500px;
+}
+#nat{
+    height: 450px;
+   width: 550px;
+}
+#er{
+    height: 190px;
+    width: 250px;
+}
